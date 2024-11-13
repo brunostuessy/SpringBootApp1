@@ -44,17 +44,6 @@
     </dependency>
 
     <dependency>
-      <groupId>io.aeron</groupId>
-      <artifactId>aeron-driver</artifactId>
-      <version>${aeron.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>io.aeron</groupId>
-      <artifactId>aeron-client</artifactId>
-      <version>${aeron.version}</version>
-    </dependency>
-
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>

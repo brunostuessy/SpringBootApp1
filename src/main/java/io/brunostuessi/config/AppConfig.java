@@ -1,5 +1,6 @@
-package io.brunostuessi;
+package io.brunostuessi.config;
 
+import io.brunostuessi.App;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -11,7 +12,7 @@ import java.util.Arrays;
 import java.util.Properties;
 
 @Configuration(proxyBeanMethods = false)
-public class AppConfiguration {
+public class AppConfig {
 
     private static Logger LOG = LoggerFactory.getLogger(App.class);
 
@@ -49,14 +50,6 @@ public class AppConfiguration {
 //                executor.shutdown();
 //                LOG.info("" + executor.awaitTermination(5, TimeUnit.MINUTES));
 //            }
-
-            LOG.info("Let's run AeronSimple");
-
-            try {
-                AeronSimple.main(null);
-            } catch (Exception e) {
-                LOG.error("AeronSimple failed", e);
-            }
 
             LOG.info("Let's sleep 1 hour");
 
